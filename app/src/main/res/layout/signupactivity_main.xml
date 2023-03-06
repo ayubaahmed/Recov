@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rotationX="0">
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Set Your Email"
+            android:minHeight="48dp"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Set Password"
+            android:minHeight="48dp"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/input_confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:minHeight="48dp"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:backgroundTint="#FEEBE8"
+            android:text="Register"
+            android:textColor="@color/teal_700" />
+
+        <Button
+            android:id="@+id/alreadyHaveAnAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:backgroundTint="@color/purple_200"
+            android:text="Already have an account?"
+            android:textColor="@color/white" />
+    </TableLayout>
+
+
+</RelativeLayout>
