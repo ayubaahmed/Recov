@@ -3,24 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/card_background"
+    >
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:contentDescription="Background image"
-        android:scaleType="centerCrop"
-        android:src="@drawable/moon3" />
+
 
     <LinearLayout
         android:id="@+id/button_container"
-        android:layout_width="430dp"
+        android:layout_width="260dp"
         android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="89dp"
         android:gravity="bottom|center"
         android:orientation="vertical">
 
@@ -35,7 +33,6 @@
             android:textColor="@color/teal_700" />
 
         <Button
-
             android:id="@+id/signUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,51 +45,56 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/inputPassword"
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="214dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="467dp"
-        android:background="@drawable/input_bg"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="13dp"
-        android:paddingRight="20dp"
-        android:paddingBottom="13dp"
-        android:textColor="#FEEBE8"
-        android:textColorHint="#FEEBE8"
-        app:layout_constraintBottom_toTopOf="@+id/button_container"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
-
-    <EditText
         android:id="@+id/inputEmail"
-        android:layout_width="314dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="538dp"
+        android:layout_above="@+id/inputPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="35dp"
         android:background="@drawable/input_bg"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:paddingLeft="20dp"
+        android:paddingLeft="25dp"
         android:paddingTop="13dp"
-        android:paddingRight="20dp"
+        android:paddingRight="25dp"
         android:paddingBottom="13dp"
-        android:textColor="#FEEBE8"
-        android:textColorHint="#FEEBE8"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/inputPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="268dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="13dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="13dp"
+        android:textColor="#FEEBE8"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
 </RelativeLayout>
