@@ -37,5 +37,21 @@ public class mainCourseActivity extends AppCompatActivity {
                 startActivity(b);
             }
         });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent c = new Intent(mainCourseActivity.this, pizzaActivity.class);
+                startActivity(c);
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent d = new Intent(mainCourseActivity.this, omeletteActivity.class);
+                startActivity(d);
+            }
+        });
     }
 }
