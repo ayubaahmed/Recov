@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pastaCardView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_28"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameOfMeal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pastaCardView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/galada"
+            android:text="Mashed Potatoes"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/timer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_18"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/difficulty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_15"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/serves"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/difficulty"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_16"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/timer"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 40 minutes"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/serves"
+            android:layout_below="@id/difficulty"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- Serves 6"
+            android:textSize="17dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepOne"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/nameOfMeal"
+            android:layout_marginLeft="28dp">
+
+            <TextView
+                android:id="@+id/stepOneText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Step One" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepOneText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Tip the potatoes into a large pan, cover with cold water and sprinkle with a generous pinch of salt. Set the pan over a high heat and bring to the boil. Once boiling, reduce the heat to a simmer and cook for 15-20 mins until the potatoes are very tender – they should be able to be easily pierced with the tip of a knife. Drain well, then return to the pan and leave to steam-dry for 5 mins."
+                android:textSize="8sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepTwo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepOne"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/stepTwoText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Step Two"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepTwoText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Pass the potatoes through a ricer into a large bowl for a lump-free mash (you may need to do this in batches). Alternatively, mash with a potato masher until smooth, then press through a sieve using the back of a spoon to get rid of any remaining lumps."
+                android:textSize="9sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepThree"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepTwo"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:id="@+id/stepThreeText"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:text="Step Three"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepThreeText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Tip the 50g salted butter, the milk and some seasoning into the bowl with the hot mash. Beat everything together with a wooden spoon or spatula until the butter has melted and the mixture is smooth and creamy. Add a splash more milk to loosen, if needed. Top with the remaining 1 tbsp butter and leave it to melt for a few seconds before serving."
+                android:textSize="8sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="470dp"
+            android:layout_toRightOf="@id/stepOne"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="235dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Ingredients"
+                android:fontFamily="@font/della_respira"
+                android:textAlignment="center"
+                android:layout_marginLeft="17dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/della_respira"
+                android:text="- 1 kg floury potatoes (like Maris Piper), cut into chunks
+
+                    - 50g salted butter plus 1 tbsp
+
+                    - 50g whole milk"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

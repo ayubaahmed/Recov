@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pastaCardView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_35"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameOfMeal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pastaCardView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/galada"
+            android:text="Vanilla Milkshake"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/timer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_18"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/difficulty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_15"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/serves"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/difficulty"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_16"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/timer"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 10 minutes"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/serves"
+            android:layout_below="@id/difficulty"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 4 "
+            android:textSize="17dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepOne"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/nameOfMeal"
+            android:layout_marginLeft="28dp">
+
+            <TextView
+                android:id="@+id/stepOneText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Step One" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepOneText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Tip the mini cookies, sprinkles, marshmallows and other sweets of your choice into separate serving bowls, and set on the table alongside the squirty cream."
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepTwo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepOne"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/stepTwoText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Step Two"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepTwoText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Blitz the ice cream, milk and vanilla in a blender until combined and creamy. Pour into a large jug."
+                android:textSize="9sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepThree"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepTwo"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:id="@+id/stepThreeText"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:text="Step Three"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepThreeText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="If you like, dip the rims of the glasses into the melted chocolate, then some sprinkles. Leave to set slightly, then divide the milkshake between glasses. Let everyone customise their shake with the toppings and squirty cream, and serve with the paper straws."
+                android:textSize="9sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="470dp"
+            android:layout_toRightOf="@id/stepOne"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="235dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Ingredients"
+                android:fontFamily="@font/della_respira"
+                android:textAlignment="center"
+                android:layout_marginLeft="17dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/della_respira"
+                android:text=" - 200g vanilla ice cream
+                    - 500ml semi-skimmed or whole milk
+                    - 2 tsp vanilla extract
+                    - melted white chocolate (optional)
+                    For the toppings
+                    - mini cookies, sprinkles, marshmallows, pretzels, popcorn, chocolates and a variety of sweets
+                    - maraschino cherries
+                    - squirty cream
+                    You’ll also need
+                    - 4 milkshake or dessert glasses
+
+                    - coloured paper straws"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

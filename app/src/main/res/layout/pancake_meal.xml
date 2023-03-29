@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pastaCardView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_25"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameOfMeal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pastaCardView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/galada"
+            android:text="Vegan Pancakes"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/timer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_18"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/difficulty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_15"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/serves"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/difficulty"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_16"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/timer"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 35 minutes"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/serves"
+            android:layout_below="@id/difficulty"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- Serves 4 - 6"
+            android:textSize="17dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepOne"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/nameOfMeal"
+            android:layout_marginLeft="28dp">
+
+            <TextView
+                android:id="@+id/stepOneText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Step One" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepOneText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Whisk the flour, baking powder, sugar, vanilla extract and a pinch of salt in a bowl using a balloon whisk until mixed. Slowly pour in the milk until you get a smooth, thick batter."
+                android:textSize="9sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepTwo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepOne"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/stepTwoText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Step Two"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepTwoText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Heat a little of the oil in a non-stick frying pan over a medium-low heat, and add 2 tbsp batter into the pan at a time to make small, round pancakes. You will need to do this in batches of two-three at a time. Cook for 3-4 mins until the edges are set, and bubbles are appearing on the surface. Flip the pancakes over and cook for another 2-3 mins until golden on both sides and cooked through. Keep warm in a low oven while you cook the remaining pancakes."
+                android:textSize="7sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepThree"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepTwo"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:id="@+id/stepThreeText"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:text="Step Three"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepThreeText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Serve stacked with lots of toppings of your choice, or serve with bowls of toppings for everyone to help themselves."
+                android:textSize="8sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="470dp"
+            android:layout_toRightOf="@id/stepOne"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="235dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Ingredients"
+                android:fontFamily="@font/della_respira"
+                android:textAlignment="center"
+                android:layout_marginLeft="17dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/della_respira"
+                android:text="- 300g self-raising flour
+                    - 1 tsp baking powder
+                    - 1 tbsp sugar (any kind)
+                    - 1 tbsp vanilla extract
+                    - 400ml plant-based milk (such as oat, almond or soya)
+
+                    - 1 tbsp vegetable oil for cooking"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

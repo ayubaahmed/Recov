@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pastaCardView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_34"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameOfMeal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pastaCardView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/galada"
+            android:text="Mulled wine cocktail"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/timer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_18"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/difficulty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_15"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/serves"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/difficulty"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_16"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/timer"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 10 minutes"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/serves"
+            android:layout_below="@id/difficulty"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 4 to 6"
+            android:textSize="17dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepOne"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/nameOfMeal"
+            android:layout_marginLeft="28dp">
+
+            <TextView
+                android:id="@+id/stepOneText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Step One" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepOneText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Put 100g light muscovado sugar in a pan with 1 star anise, 1 cinnamon stick, 4 cloves and 150ml water. Bring slowly to the boil, stirring to dissolve the sugar."
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepTwo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepOne"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/stepTwoText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Step Two"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepTwoText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Simmer for 2 mins, then pour into a large jug and leave to cool. Add 1 lemon and 2 clementines, both thinly sliced, to the jug along with 150ml Cointreau and a 750ml bottle light red wine, such as a Beaujolais. Stir well, then cover and chill for at least 2 hrs or overnight if you can."
+                android:textSize="9sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepThree"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepTwo"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:id="@+id/stepThreeText"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:text="Step Three"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepThreeText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Serve chilled or over ice, with a twist of orange zest and a star anise. If you’d like to serve a traditional warm mulled wine, there’s no need to chill – simply warm through without boiling and serve in heatproof glasses."
+                android:textSize="10sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="470dp"
+            android:layout_toRightOf="@id/stepOne"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="235dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Ingredients"
+                android:fontFamily="@font/della_respira"
+                android:textAlignment="center"
+                android:layout_marginLeft="17dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/della_respira"
+                android:text=" - 100g/4oz light muscovado sugar
+                    - 1 star anise
+
+                    - 1 cinnamon stick
+                    - 4 cloves
+
+                    - 150ml water
+
+                    - 1 lemon
+
+                    - 2 clementines
+
+                    - 150ml Cointreau
+
+                    - 750ml/ 1¼pint bottle light red wine, such as Beaujolais
+
+                    - Twist of orange zest and a star anise, to serve"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

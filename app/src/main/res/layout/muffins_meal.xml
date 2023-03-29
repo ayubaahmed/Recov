@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pastaCardView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_32"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameOfMeal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pastaCardView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/galada"
+            android:text="Easy blueberry muffins"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/timer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_18"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/difficulty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_15"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:id="@+id/serves"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/pastaCardView"
+            android:layout_below="@+id/difficulty"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_16"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/timer"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- 40 minutes"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/serves"
+            android:layout_below="@id/difficulty"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/galada"
+            android:text="- Serves 12"
+            android:textSize="17dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepOne"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/nameOfMeal"
+            android:layout_marginLeft="28dp">
+
+            <TextView
+                android:id="@+id/stepOneText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Step One" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="126dp"
+                android:layout_below="@+id/stepOneText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Heat oven to 200C/180C fan/gas 6 and line a 12-hole muffin tin with paper cases. Beat the butter and caster sugar together until pale and fluffy. Add the eggs and beat in for 1 min, then mix in the yogurt, vanilla extract and milk. Combine the flour, baking powder and bicarb in a bowl with ¼ tsp fine salt, then tip this into the wet ingredients and stir in. Finally, fold in the blueberries and divide the mixture between the muffin cases."
+                android:textSize="7.5sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepTwo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepOne"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/stepTwoText"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Step Two"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepTwoText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Bake for 5 mins, then reduce oven to 180C/160C fan/gas 4 and bake for 15-18 mins more until risen and golden, and a cocktail stick inserted into the centre comes out clean."
+                android:textSize="9sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepThree"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepTwo"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+                android:id="@+id/stepThreeText"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:text="Step Three"
+                android:fontFamily="@font/della_respira"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/stepThreeText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/della_respira"
+                android:text="Cool in the tin for 10 mins, then carefully lift out onto a wire rack to finish cooling. Will keep for 3-4 days in an airtight container – after a day or two, pop them in the microwave for 10-15 secs on high to freshen up."
+                android:textSize="9sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="470dp"
+            android:layout_toRightOf="@id/stepOne"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="235dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Ingredients"
+                android:fontFamily="@font/della_respira"
+                android:textAlignment="center"
+                android:layout_marginLeft="17dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/della_respira"
+                android:text="- 100g unsalted butter softened, plus 1 tbsp, melted, for greasing
+
+                    - 140g golden caster sugar
+
+                    - 2 large eggs
+                    - 140g natural yogurt
+                    - 1 tsp vanilla extract
+                    - 2 tbsp milk
+
+                    - 250g plain flour
+                    - 2 tsp baking powder
+
+                    - 1 tsp bicarbonate of soda
+
+                    - 125g pack blueberries (or use frozen)"
+
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

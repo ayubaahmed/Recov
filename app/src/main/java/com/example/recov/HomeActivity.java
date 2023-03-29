@@ -32,8 +32,29 @@ public class HomeActivity<homeActivity> extends AppCompatActivity {
             }
         });
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(HomeActivity.this,sideCourseActivity.class);
+                startActivity(a);
+            }
+        });
 
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent b = new Intent(HomeActivity.this,desertActivity.class);
+                startActivity(b);
+            }
+        });
 
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent c = new Intent(HomeActivity.this,drinksActivity.class);
+                startActivity(c);
+            }
+        });
 
     }
 }

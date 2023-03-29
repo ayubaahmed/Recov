@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        android:textSize="35sp"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/teal_700"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:rowCount="2"
+        android:columnCount="2"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:layout_marginLeft="80dp"
+            android:padding="10dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/img_33"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Cordial"
+                    android:textColor="#282828"
+                    android:textSize="10sp"/>
+
+                <Button
+                    android:id="@+id/cordialButton"
+                    android:layout_width="30dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="-18dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="-18dp"
+                    android:rotation="180"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_6"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="7dp"
+            android:padding="10dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/img_34"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Cocktail"
+                    android:textColor="#282828"
+                    android:textSize="10sp"/>
+
+                <Button
+                    android:id="@+id/cocktailButton"
+                    android:layout_width="30dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="-18dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="-18dp"
+                    android:rotation="180"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_6"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/img_35"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Milkshake"
+                    android:textColor="#282828"
+                    android:textSize="10sp"/>
+
+                <Button
+                    android:id="@+id/milkshakeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="-18dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="-18dp"
+                    android:rotation="180"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_6"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="7dp"
+            android:padding="10dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/img_36"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Coffee "
+                    android:textColor="#282828"
+                    android:textSize="10sp"/>
+
+                <Button
+                    android:id="@+id/coffeeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="-18dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="-18dp"
+                    android:rotation="180"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_6"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>
