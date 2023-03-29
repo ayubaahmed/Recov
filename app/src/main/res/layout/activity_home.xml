@@ -59,7 +59,7 @@
                         android:id="@+id/mainCourseButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Open"
+                        android:text="View"
                         android:textColor="@color/white"
                         android:backgroundTint="@color/teal_700"
                         android:textAllCaps="false"/>
