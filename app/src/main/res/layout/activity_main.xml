@@ -7,8 +7,6 @@
     android:background="@drawable/card_background"
     >
 
-
-
     <LinearLayout
         android:id="@+id/button_container"
         android:layout_width="260dp"

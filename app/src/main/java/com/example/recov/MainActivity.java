@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button login;
+
+    // contains a regular expression pattern to match email addresses.
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]\\[a-z]+";
     ProgressDialog progressDialog;
 
-    FirebaseAuth mAuth;
-    FirebaseUser mUser;
+    FirebaseAuth mAuth; // provides methods from firebase for authenticating
+    FirebaseUser mUser; // represents a user signing in from firebase
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         inputPassword = findViewById(R.id.inputPassword);
         login = findViewById(R.id.login);
         progressDialog = new ProgressDialog(this);
-        mAuth = FirebaseAuth.getInstance();
-        mUser = mAuth.getCurrentUser();
+        mAuth = FirebaseAuth.getInstance(); // initialised
+        mUser = mAuth.getCurrentUser(); // initialised
         signUp = findViewById(R.id.signUp);
 
 
@@ -65,9 +67,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void perforLogin() {
 
+        // performs log in for user
+        // grabs information from firebase database that I set up
+
         String email = inputEmail.getText().toString();
         String password = inputPassword.getText().toString();
 
+
+        // checks of email matches the email pattern that was initialised
         if (email.matches(emailPattern))
         {
             inputEmail.setError("Enter Correct Email");
@@ -82,17 +89,22 @@ public class MainActivity extends AppCompatActivity {
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
+
+            // method used to authenticate a user using firebase, users email and password are used as arguments.
             mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
 
+                    // if user authentication was successful
                     if (task.isSuccessful())
                     {
                         progressDialog.dismiss();
                         sendUserToNextActivity();
+                        // message to indicate login was successful
                         Toast.makeText(MainActivity.this,"Login successful", Toast.LENGTH_SHORT).show();
                     }else
                     {
+                        // message to indicate login was unsuccessful
                         progressDialog.dismiss();
                         Toast.makeText(MainActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
                     }
@@ -101,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
+
+    // method is ran if user authentication is successful, sends user to the home page
     private void sendUserToNextActivity() {
         Intent intent = new Intent(MainActivity.this,HomeActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);

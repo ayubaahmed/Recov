@@ -52,6 +52,12 @@ public class SignUpActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
 
+        String getEmail = inputEmail.getText().toString();
+
+        Intent o = new Intent(SignUpActivity.this, ProfileActivity.class);
+        o.putExtra("inputEmail",getEmail);
+        startActivity(o);
+
         alreadyHaveAccount.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 startActivity(new Intent(SignUpActivity.this,MainActivity.class));
@@ -68,6 +74,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void PerformAuth() {
+        // performs authentication for user when signing in
         String email = inputEmail.getText().toString();
         String password = inputPassword.getText().toString();
         String confirmPassword = inputConfirmPassword.getText().toString();
@@ -91,17 +98,20 @@ public class SignUpActivity extends AppCompatActivity {
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
+            // creates a new user on firebase
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful())
                     {
+                        // if registration is successful
                         progressDialog.dismiss();
                         sendUserToNextActivity();
                         Toast.makeText(SignUpActivity.this,"Registration successful", Toast.LENGTH_SHORT).show();
                     }
                     else
                     {
+                        if registration is not successful
                         progressDialog.dismiss();
                         Toast.makeText(SignUpActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
                     }
